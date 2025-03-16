@@ -46,11 +46,12 @@ const pauseTimer = () => {
 }
 
 const restartTimer = () => {
-    clearInterval(myInterval); 
-    state = true; 
-    isPaused = false;
-    appTimer();
-    pauseBtn.textContent = 'Pause';
+    //clearInterval(myInterval); 
+    //state = true; 
+   // isPaused = false;
+    //appTimer();
+    //pauseBtn.textContent = 'Pause';
+    window.location.reload();
 }
 
 startBtn.addEventListener('click', appTimer);
